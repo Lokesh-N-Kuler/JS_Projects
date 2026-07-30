@@ -12,11 +12,11 @@ form.addEventListener('submit',function(e){
     }
 
     else if(weight == '' || weight < 0 || isNaN(weight)){
-        results.innerHTML = `please give a valid height ${weight}`;
+        results.innerHTML = `please give a valid weight ${weight}`;
     }
     else{
         const bmi = (weight/((height*height)/10000)).toFixed(2);
-        results.innerHTML =`<span>${bmi}</span>`;
-       
+        results.innerHTML =`<span>${bmi}</span> <h1>under weight</h1>`;
     }
+    
 });
