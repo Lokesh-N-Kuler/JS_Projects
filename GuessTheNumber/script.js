@@ -86,6 +86,9 @@ function endgame(){
     userinput.setAttribute('disabled','');
     p.classList.add('button');
     p.innerHTML=`<h2 id="newGame">Start new game</h2>`;
+    p.style.backgroundColor='red';
+    p.style.borderRadius='50';
+    
     startover.appendChild(p);
     playgame = false;
     newgame();
